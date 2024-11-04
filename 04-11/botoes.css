@@ -1,0 +1,28 @@
+
+.bt {
+    color: var(--cor-fundo-bt);
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.bt_salvar{
+    background-color: var(--cor-fundo-bt-salvar);
+}
+
+.bt_cancelar{
+    background-color: var(--cor-fundo-bt-cancelar);
+}
+
+.bt_salvar:hover{
+    cursor: pointer;
+    transition: 1s ease;
+    background-color: green;
+}
+
+.bt_cancelar:hover{
+    cursor: pointer;
+    transition: 1s ease;
+    background-color: green;
+}
