@@ -1,0 +1,21 @@
+h1{
+    color: rgba(0, 4, 255, 0.808);
+    background-color: chartreuse;
+}
+
+h3{
+    color: brown;
+    background-color: cornsilk;
+}
+
+p{
+    color: blue;
+}
+
+div{
+    border: 0.5px solid gray;
+    background-image: url('./gabigol.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

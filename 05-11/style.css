@@ -1,0 +1,32 @@
+body {
+    /* border-top-color: blue;
+    border-top-style: solid;
+    border-top-width: 7px; */
+    /* border: 1px solid black; */
+    margin: 0;
+}
+
+h1{
+    border-right: 3px dotted red;
+    background-color: gray;
+    color: beige;
+    margin: 0;
+    padding: 15px;
+}
+
+h3{
+    border: 4px groove black
+}
+
+div{
+    border: 0.5px solid salmon;
+    border-bottom-width: 5px;
+    padding: 10px;
+    border-top-left-radius: 30px;
+}
+
+button{
+    margin: 0 3px;
+    padding: 5px;
+    border-radius: 5px;
+}
