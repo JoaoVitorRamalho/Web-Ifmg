@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Pacifico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 200vh;
+    background-color: #eee;   
+}
+
+div{
+    font-family: "Merienda", cursive;
+      
+}
+
+.div-topo{
+    text-align: center;
+    margin: auto;
+}
+
+.div-introducao{
+    border: 1px solid black;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+h1{
+    position: sticky;
+    top: 0px;
+    font-family: "Merienda", cursive;
+    text-align: center;
+}
+
+.p-primeiro{
+    background-image: url('./rigby.png');
+}
+

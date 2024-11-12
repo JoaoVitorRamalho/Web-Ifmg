@@ -1,0 +1,43 @@
+button{
+    display: inline;
+}
+
+.bt-bottom-right{
+    position: fixed;
+    bottom: 10px;
+    right: 35px;
+}
+
+div{
+    background-color: brown;
+}
+
+.div-d{
+    color: aliceblue;
+    margin-bottom: 5px;
+    width: 100px;
+    display: inline;
+}
+
+.div-menu{
+    position: sticky;
+    top: 10px;
+}
+
+.div-card{
+    background-color: aliceblue;
+}
+
+.div-card-tit{
+    background-color: chocolate;
+    padding: 8px;
+}
+
+.div-card-corpo{
+    background-color:chartreuse;
+    padding: 5px;
+    position: relative;
+    top: -10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
