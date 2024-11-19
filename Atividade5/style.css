@@ -36,6 +36,40 @@ h1{
 }
 
 .p-primeiro{
-    background-image: url('./rigby.png');
+    background-image: url('./rigby-removebg-preview.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.p-segundo{
+    background-image: url('./mordecai-removebg-preview.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.div-topicos{
+    font-family: Pacifico;
+}
+
+button{
+    cursor: pointer;
+    display: inline;
+    margin: 0 3px;
+    padding: 5px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.bt-links:hover{
+    transition: 1s ease;
+    background-color: gray;
+}
+
+.bt-bottom-right{
+    position: fixed;
+    bottom: 10px;
+    right: 35px;
 }
 
