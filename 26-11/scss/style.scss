@@ -1,0 +1,31 @@
+@use 'cores';
+
+@mixin alerta($cor_borda: white, $cor_t: black, $cor_f: transparent){
+    border: 1px solid $cor_borda;
+    color: $cor_t;
+    background-color: $cor_borda;
+    padding: 10px;
+}
+
+body{
+    background-color: cores.$cor3;
+}
+
+header{
+    background-color: cores.$cor1;
+    padding: 8px;
+    h3{
+        text-align: center;
+        &:hover{
+            color: white;
+        }
+    }
+}
+
+p{
+    @include alerta;
+}
+
+.alerta-info{
+    @include alerta(blue,white,rgb(88, 88, 211))
+}
