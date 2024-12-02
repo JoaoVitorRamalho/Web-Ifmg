@@ -29,3 +29,24 @@ p{
 .alerta-info{
     @include alerta(blue,white,rgb(88, 88, 211))
 }
+
+%botao{
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+button{
+    @extend %botao
+}
+
+.botao-confirmar{
+    @extend %botao;
+    background-color: blue;
+    color: whitesmoke;
+}
+
+.botao-deletar{
+    @extend %botao;
+    background-color: red;
+    color: whitesmoke;
+}
