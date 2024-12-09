@@ -78,3 +78,11 @@ function testesArrayComObjetos() {
         
     }
 }
+
+function testesObjetosComArray() {
+    const pessoa = {
+        "nome": 'Joao',
+        "idade": 45,
+        "dependentes":['Gustavin','FellipinBroxa','Caio']
+    }
+}
