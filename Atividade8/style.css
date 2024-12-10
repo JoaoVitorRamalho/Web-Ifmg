@@ -5,6 +5,7 @@ body{
 h1{
     text-align: center;
     color: beige;
+    text-shadow: 1px 1px 1px;
 }
 
 footer{
@@ -16,13 +17,22 @@ footer{
     justify-content: center;
 }
 
+#section1 img:hover{
+    cursor: pointer;
+}
+
 #section2{
     display: flex;
     justify-content: center;
+    margin-top: 8px;
+}
+
+#section2 img:hover{
+    cursor: pointer;
 }
 
 #section1 img {
-    width: 300px;
+    width: 250px;
     
 }
 

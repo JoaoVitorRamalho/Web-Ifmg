@@ -1,13 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
 
 *{
     margin: 0;
     padding: 0%;
+    font-family: "Oleo Script", system-ui;
 }
  
 div p {
-    text-align: right;
+    text-align: justify;
 }
+
+.div-topo{
+    text-align: center;
+    margin: auto;
+}
+
 
 table{
     border-collapse: collapse;
@@ -25,7 +32,7 @@ thead tr{
 }
 
 tbody tr:nth-child(odd){
-    background-color: chocolate;
+    background-color: yellow;
 }
 
 tbody tr:nth-child(even){
@@ -39,7 +46,7 @@ tbody tr:hover {
 input[type="checkbox"] + nav{
     display: none;
     position: absolute;
-    background-color: aqua;
+    background-color: yellow;
     padding: 10px;
     bottom: 0;
     left: 0;
@@ -58,7 +65,7 @@ a{
 }
 
 a:hover{
-    background-color: rgb(189, 248, 228);
+    background-color: rgb(243, 243, 132);
 }
 
 input[type="checkbox"]:checked + nav{
@@ -81,6 +88,18 @@ label{
 }
 
 header{
-    background-color: aqua;
+    background-color: yellow;
     border: 1px solid black;
 }
+
+img{
+    width: 500px;
+}
+
+footer{
+    background-color: #24f708;
+    border: 1px solid black;
+    padding: 5px;
+    
+}
+
