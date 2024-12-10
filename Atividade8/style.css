@@ -1,0 +1,32 @@
+body{
+    background-color: #4e5861;
+}
+
+h1{
+    text-align: center;
+    color: beige;
+}
+
+footer{
+    text-align: center;
+}
+
+#section1{
+    display: flex;
+    justify-content: center;
+}
+
+#section2{
+    display: flex;
+    justify-content: center;
+}
+
+#section1 img {
+    width: 300px;
+    
+}
+
+#section2 img {
+    width: 180px;
+    
+}
