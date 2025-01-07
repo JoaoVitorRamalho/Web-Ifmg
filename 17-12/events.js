@@ -46,7 +46,7 @@ function testeCssTexto() {
     const h3 = document.querySelector('footer h3');
     const tabela = document.querySelector('table')
 
-    h1.innerText = 'Título Novo';
+    h1.innerText = 'Testes JS - DOM';
     h1.style.color = 'blue';
     h1.style.textAlign = 'center';
     h1.style.borderBottom = '0.2px solid red';
@@ -58,20 +58,43 @@ function testeCssTexto() {
     tabela.classList.toggle('tabela');
 }
 
+function testeRemover(event) {
+    const texto = event.target.getAttribute('data-texto');
+    if (confirm(`Apagar?`)){
+        event.target.parentNode.parentNode.remove();
+    } 
+}
+
 function testeCriarEncaixar(e) {
     e.preventDefault();
     const corpoTabela = document.getElementById('corpo_tabela');
     const iptNome = document.getElementById('nome');
+    const iptSobrenome = document.getElementById('sobrenome');
+    const iptTelefone = document.getElementById('telefone');
+    const iptSenha = document.getElementById('senha');
     const tr = document.createElement('tr');
     const td1 = document.createElement('td');
     const td2 = document.createElement('td');
     const td3 = document.createElement('td');
+    const td4 = document.createElement('td');
+    const td5 = document.createElement('td');
+    const td6 = document.createElement('td');
+    const btEx = document.createElement('button');
+    btEx.innerText = 'Excluir';
+    btEx.setAttribute('data-texto', iptNome.value)
+    btEx.setAttribute('data-texto', iptSobrenome.value)
+    btEx.setAttribute('data-texto', iptTelefone.value)
+    btEx.setAttribute('data-texto', iptSenha.value)
+    btEx.addEventListener('click', testeRemover);
     td1.innerText = '#';
     td2.innerText = iptNome.value;
-    td3.innerText = 'ações';
-
-    tr.append(td1,td2,td3);
+    td3.innerText = iptSobrenome.value;
+    td4.innerText = iptTelefone.value;
+    td5.innerText = iptSenha.value;
+    td6.append(btEx);
+    tr.append(td1,td2,td3,td4,td5,td6);
     corpoTabela.append(tr);
+    event.target.reset();
 }
 
 const bt1 = document.getElementById('bt01');
