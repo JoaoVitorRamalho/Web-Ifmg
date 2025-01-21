@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Cartas</h1>
+    <form>
+      <label for="nome">Nome</label><br />
+      <input type="text" name="nome" id="nome" /><br />
+      <label for="descricao">Descrição</label><br />
+      <input type="text" name="descricao" id="descricao" /><br />
+      <button>Salvar</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Descricao</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script>
+      async function enviaCartaParaApi(e) {
+        e.preventDefault();
+        const dados = new FormData(e.target);
+        const opt = {
+          method: "post",
+          body: dados,
+        };
+        const res = await fetch("http://localhost/13-01/carta/inserir", opt);
+        const json = await res.json();
+        alert(json.status);
+        desenhaTabela();
+      }
+
+      async function desenhaTabela(e){
+        const res = await fetch('http://localhost/13-01/carta/listar')
+        const dados = await res.json();
+        const tbody = document.querySelector('tbody');
+        tbody.innerHTML = '';
+        for (let i = 0; i < dados.length; i++) {
+          const tr = document.createElement('tr');
+          const td1 = document.createElement('td');
+          const td2 = document.createElement('td');
+          td1.innerText = dados[i].nome;
+          td2.innerText = dados[i].descricao;
+          tr.append(td1,td2);
+          tbody.append(tr);          
+        }
+      }
+      document
+        .querySelector("form")
+        .addEventListener("submit", enviaCartaParaApi);
+      window.addEventListener('load', desenhaTabela);
+    </script>
+  </body>
+</html>
