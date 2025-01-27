@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+    width: 100%;
+}
+
+main section {
+    border: 1px solid black;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    margin:8px auto;
+}
+
+ul {
+    list-style: none;
+}
