@@ -17,3 +17,15 @@ async function enviaDadosParaLoginNaAPI(e) {
 }
 
 document.forms[0].addEventListener('submit', enviaDadosParaLoginNaAPI);
+
+async function cadastraPadrao(e) {
+    e.preventDefault();
+    const opt = {
+        method: 'post'
+    }
+    const res = await fetch(`${URL_BASE_API}/autenticacao/padrao`, opt);
+    const json = await res.text();
+    alert(json);
+}
+
+document.getElementById("padrao").addEventListener('click', cadastraPadrao);

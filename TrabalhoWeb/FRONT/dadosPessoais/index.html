@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/padrao.css">
+    <title>Dados Pessoais</title>
+</head>
+
+<body>
+    <nav>
+        <a href="../index.html">
+            <img src="../imagens/logo.png" alt="">
+        </a>
+        <div>
+            <a id="link_login"></a>
+        </div>
+    </nav>
+    <header>
+        <h1>Dados Pessoais</h1>
+    </header>
+    <main>
+        <form>
+            <input type="hidden" name="id" id="id"><br>
+            <label for="nome">Nome</label><br>
+            <input type="text" name="nome" id="nome"><br>
+            <label for="cpf">CPF</label><br>
+            <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00"><br>
+            <label for="escolaridade">Escolaridade</label><br>
+            <input type="text" name="escolaridade" id="escolaridade"><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email"><br>
+            <label for="ra">RA</label><br>
+            <input type="text" name="ra" id="ra"><br>
+            <label for="numero">Numero</label><br>
+            <input type="text" name="numero" id="numero"><br>
+            <button>Save</button>
+        </form>
+        <br>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Escolalidade</th>
+                    <th>E-mail</th>
+                    <th>RA</th>
+                    <th>Numero</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+    <footer>
+        &copy; João Vítor Ramalho Gonçalves - IFMG Campus São João Evangelista
+    </footer>
+</body>
+<script src="./dadosPessoais.js" type="module"></script>
+
+</html>

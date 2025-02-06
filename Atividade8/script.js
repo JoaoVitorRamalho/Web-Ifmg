@@ -12,7 +12,6 @@ cartasSection2.forEach((carta) => {
   });
 });
 
-
 cartasSection1.forEach((carta) => {
   carta.addEventListener('click', () => {
     carta.src = './images.jpg';

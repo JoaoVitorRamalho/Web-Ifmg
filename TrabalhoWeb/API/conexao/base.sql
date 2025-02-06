@@ -30,9 +30,9 @@ CREATE TABLE `grupoFamiliar` (
   `id` int NOT NULL AUTO_INCREMENT,
   `nome` varchar(128) DEFAULT NULL,
   `cpf` varchar(512) DEFAULT NULL,
-  `parentesto` varchar(128) DEFAULT NULL,
+  `parentesco` varchar(128) DEFAULT NULL,
   `numero` varchar(16) DEFAULT NULL,
-  `idAluno` int DEFAULT NULL,  
+  `idaluno` varchar(16) DEFAULT NULL,  
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;
 
@@ -43,8 +43,8 @@ CREATE TABLE `endereco` (
   `cidade` varchar(128) DEFAULT NULL,
   `rua` varchar(512) DEFAULT NULL,
   `bairro` varchar(128) DEFAULT NULL,
-  `numero` int DEFAULT NULL,
-  `idAluno` int DEFAULT NULL,  
+  `numero` varchar(16) DEFAULT NULL,
+  `idaluno` varchar(16) DEFAULT NULL,  
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;
 
@@ -52,9 +52,9 @@ DROP TABLE IF EXISTS `renda`;
 
 CREATE TABLE `renda` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `rendaFamiliar` decimal(4,2) DEFAULT NULL,
-  `numeroPessoas` int DEFAULT NULL,
-  `idAluno` int DEFAULT NULL,  
+  `rendaFamiliar` varchar(32) DEFAULT NULL,
+  `numeroPessoas` varchar(16) DEFAULT NULL,
+  `idAluno` varchar(16) DEFAULT NULL,  
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;
 

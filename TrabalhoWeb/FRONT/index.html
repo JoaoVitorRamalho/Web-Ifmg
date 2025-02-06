@@ -1,27 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Sistema</title>
+    <title>Matrícula IFMG</title>
+    <link rel="stylesheet" href="./css/padrao.css">
 </head>
 
 <body>
     <nav>
-        <div>
-            <a href="./cartas">Cartas</a>
-            <a href="#">Clientes</a>
-            <a href="#">Etc.</a>
-        </div>
+        <a href="index.html">
+        <img src="./imagens/logo.png" alt="">
+        </a>
         <div>
             <a id="link_login" href=""></a>
         </div>
     </nav>
     <header>
-        <h1>Sistema</h1>
-    </header>    
+        <img src="./imagens/sistema.png" alt="" id="imgLogin">
+    </header>
+    <main id="Principal">
+        <h1>Cadastrar</h1>
+        <a href="./dadosPessoais/index.html">
+        <button>Dados Pessoais</button>
+        </a>
+        <a href="./grupoFamiliar/index.html">
+        <button>Grupo Familiar</button>
+        </a>
+        <a href="./endereco/index.html">
+        <button>Endereço</button>
+        </a>
+        <a href="./renda/index.html">
+        <button>Renda</button>
+        </a>
+    </main>
+    <footer>
+        &copy; João Vítor Ramalho Gonçalves - IFMG Campus São João Evangelista
+    </footer>
 </body>
 <script type="module" src="./index.js"></script>
 </html>

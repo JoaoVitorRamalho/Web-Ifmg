@@ -3,7 +3,7 @@ require_once './conexao/conexao.php';
 class ControleGrupo {
     
     public function listar() {
-        $sql = 'select * from grupoFamiliar';
+        $sql = 'select * from grupofamiliar';
         $todos = [];
         $preparado = Conexao::preparaComando($sql);
         if($preparado->execute()){
@@ -13,7 +13,7 @@ class ControleGrupo {
     }
 
     public function um() {
-        $sql = 'select * from grupoFamiliar where id = ?';
+        $sql = 'select * from grupofamiliar where id = ?';
         $id = filter_input(INPUT_POST, 'id');
         $um = [];
         $preparado = Conexao::preparaComando($sql);
@@ -26,13 +26,13 @@ class ControleGrupo {
 
     public function inserir() {
         $sql = 
-        'insert into grupoFamiliar (nome, cpf, parentesco, numero, idAluno)
+        'insert into grupofamiliar (nome, cpf, parentesco, numero, idaluno)
         values (?, ?, ?, ?, ?)';
         $nome = filter_input(INPUT_POST, 'nome');
         $cpf = filter_input(INPUT_POST, 'cpf');
         $parentesco = filter_input(INPUT_POST, 'parentesco');
         $numero = filter_input(INPUT_POST, 'numero');
-        $idaluno = filter_input(INPUT_POST, 'idAluno');
+        $idaluno = filter_input(INPUT_POST, 'idaluno');
 
         $preparado = Conexao::preparaComando($sql);
         $preparado->bindValue(1, $nome);
@@ -49,14 +49,14 @@ class ControleGrupo {
 
     public function editar() {
         $sql = 
-        'update grupoFamiliar set nome = ?, cpf = ?, parentesco = ?, numero = ?, idAluno = ?
+        'update grupoFamiliar set nome = ?, cpf = ?, parentesco = ?, numero = ?, idaluno = ?
         where id = ?;';
         $id = filter_input(INPUT_POST, 'id');
         $nome = filter_input(INPUT_POST, 'nome');
         $cpf = filter_input(INPUT_POST, 'cpf');
         $parentesco = filter_input(INPUT_POST, 'parentesco');
         $numero = filter_input(INPUT_POST, 'numero');
-        $idaluno = filter_input(INPUT_POST, 'idAluno');
+        $idaluno = filter_input(INPUT_POST, 'idaluno');
         $preparado = Conexao::preparaComando($sql);
         $preparado->bindValue(1, $nome);
         $preparado->bindValue(2, $cpf);

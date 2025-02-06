@@ -4,7 +4,7 @@
     font-family: "PT Serif", serif;
 }
 body {
-    background-color: orange;
+    background-color: beige;
     margin: 0;
     padding: 0;
 }
@@ -19,7 +19,8 @@ nav {
     justify-content: space-between;
     background-color: #448844;
     margin: 0;
-    padding: 40px;
+    padding: 30px;
+    align-items: center;
 }
 
 nav div {
@@ -34,6 +35,7 @@ main {
     align-items: center;
     border: 0.5px solid black;
     padding: 10px;
+    margin-bottom: 260px;
 }
 
 table, form {
@@ -42,7 +44,7 @@ table, form {
 }
 
 img {
-    width: 18%;
+    width: 50px;
 }
 
 td:nth-child(3) {
@@ -53,7 +55,7 @@ button {
     background-color: #448844;
     color: white;
     border: none;
-    padding: 3px 5px;
+    padding: 8px 10px;
     margin: 1px;
     cursor: pointer;
 }
@@ -64,8 +66,7 @@ input {
 }
 
 footer{
-    background-color: #448844;
-    position: fixed;
+    background-color: #448844;  
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -75,4 +76,19 @@ footer{
 
 a{
     color: beige;
+}
+
+#mainlogout{
+    margin-bottom: 290px;
+    border: 0.5px solid beige;
+}
+
+#fundoLogout{
+    width: 200px;
+}
+
+#imgLogin{
+    width: 400px;
+    margin: auto;
+    display: flex;
 }

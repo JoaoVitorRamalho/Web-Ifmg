@@ -4,17 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/main.css">
-    <title>Cartas</title>
+    <link rel="stylesheet" href="../css/padrao.css">
+    <title>Login</title>
 </head>
 
 <body>
     <header>
-        <a href="../index.html">Home</a>
-        <h1>Login</h1>
+        <nav>
+            <a href="../index.html">
+                <img src="../imagens/logo.png" alt="">
+            </a>
+        </nav>
     </header>
+    <img src="../imagens/sistema.png" alt="" id="imgLogin">
     <main>
-        <img src="../imagens/cadeado.jpg" alt="">
+        
+        <h1>Login</h1>
         <form>
             <label for="email">E-mail</label><br>
             <input type="text" name="email" id="email"><br>
@@ -22,10 +27,11 @@
             <input type="password" name="senha" id="senha"><br>
             <button>Save</button>
         </form>
+        <button id="padrao">Criar Usuário Padrão</button>
         <br>
     </main>
     <footer>
-        &copy; Rosinei.
+        &copy; João Vítor Ramalho Gonçalves - IFMG Campus São João Evangelista
     </footer>
 </body>
 <script src="./login.js" type="module"></script>

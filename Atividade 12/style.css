@@ -9,8 +9,13 @@ main section{
     display: flex;
     justify-content: center;
     margin: 8px auto;
+    background-color: beige;
 }
 
 ul {
     list-style: none;
+}
+h1{
+    text-shadow: 1px 1px 1px;
+    color: blue;
 }

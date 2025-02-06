@@ -26,13 +26,13 @@ class ControleEndereco {
 
     public function inserir() {
         $sql = 
-        'insert into endereco (cidade, rua, bairro, numero, idAluno)
+        'insert into endereco (cidade, rua, bairro, numero, idaluno)
         values (?, ?, ?, ?, ?)';
         $cidade = filter_input(INPUT_POST, 'cidade');
         $rua = filter_input(INPUT_POST, 'rua');
         $bairro = filter_input(INPUT_POST, 'bairro');
         $numero = filter_input(INPUT_POST, 'numero');
-        $idaluno = filter_input(INPUT_POST, 'idAluno');
+        $idaluno = filter_input(INPUT_POST, 'idaluno');
 
         $preparado = Conexao::preparaComando($sql);
         $preparado->bindValue(1, $cidade);
@@ -49,14 +49,14 @@ class ControleEndereco {
 
     public function editar() {
         $sql = 
-        'update endereco set cidade = ?, rua = ?, bairro = ?, numero = ?, idAluno = ?
+        'update endereco set cidade = ?, rua = ?, bairro = ?, numero = ?, idaluno = ?
         where id = ?;';
         $id = filter_input(INPUT_POST, 'id');
         $cidade = filter_input(INPUT_POST, 'cidade');
         $rua = filter_input(INPUT_POST, 'rua');
         $bairro = filter_input(INPUT_POST, 'bairro');
         $numero = filter_input(INPUT_POST, 'numero');
-        $idaluno = filter_input(INPUT_POST, 'idAluno');
+        $idaluno = filter_input(INPUT_POST, 'idaluno');
         $preparado = Conexao::preparaComando($sql);
         $preparado->bindValue(1, $cidade);
         $preparado->bindValue(2, $rua);

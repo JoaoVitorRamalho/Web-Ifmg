@@ -3,7 +3,6 @@ require_once './controles/ControleDados.php';
 require_once './controles/ControleGrupo.php';
 require_once './controles/ControleEndereco.php';
 require_once './controles/ControleRenda.php';
-require_once './controles/ControleCarta.php';
 require_once './controles/ControleAutenticacao.php';
 
 header('Content-type: application/json');
