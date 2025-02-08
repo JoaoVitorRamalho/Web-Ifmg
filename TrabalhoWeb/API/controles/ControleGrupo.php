@@ -3,7 +3,7 @@ require_once './conexao/conexao.php';
 class ControleGrupo {
     
     public function listar() {
-        $sql = 'select * from grupofamiliar';
+        $sql = 'select * from grupoFamiliar';
         $todos = [];
         $preparado = Conexao::preparaComando($sql);
         if($preparado->execute()){
@@ -13,7 +13,7 @@ class ControleGrupo {
     }
 
     public function um() {
-        $sql = 'select * from grupofamiliar where id = ?';
+        $sql = 'select * from grupoFamiliar where id = ?';
         $id = filter_input(INPUT_POST, 'id');
         $um = [];
         $preparado = Conexao::preparaComando($sql);
@@ -26,7 +26,7 @@ class ControleGrupo {
 
     public function inserir() {
         $sql = 
-        'insert into grupofamiliar (nome, cpf, parentesco, numero, idaluno)
+        'insert into grupoFamiliar (nome, cpf, parentesco, numero, idaluno)
         values (?, ?, ?, ?, ?)';
         $nome = filter_input(INPUT_POST, 'nome');
         $cpf = filter_input(INPUT_POST, 'cpf');

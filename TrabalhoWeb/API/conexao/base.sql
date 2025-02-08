@@ -57,12 +57,3 @@ CREATE TABLE `renda` (
   `idAluno` varchar(16) DEFAULT NULL,  
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;
-
-DROP TABLE IF EXISTS `cartas`;
-
-CREATE TABLE `cartas` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `nome` varchar(128) DEFAULT NULL,
-  `descricao` varchar(512) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;

@@ -3,7 +3,7 @@ require_once './conexao/conexao.php';
 class ControleDados {
     
     public function listar() {
-        $sql = 'select * from dadospessoais';
+        $sql = 'select * from dadosPessoais';
         $todos = [];
         $preparado = Conexao::preparaComando($sql);
         if($preparado->execute()){
@@ -13,7 +13,7 @@ class ControleDados {
     }
 
     public function um() {
-        $sql = 'select * from dadospessoais where id = ?';
+        $sql = 'select * from dadosPessoais where id = ?';
         $id = filter_input(INPUT_POST, 'id');
         $um = [];
         $preparado = Conexao::preparaComando($sql);
@@ -26,7 +26,7 @@ class ControleDados {
 
     public function inserir() {
         $sql = 
-        'insert into dadospessoais (nome, cpf, escolaridade, email, ra, numero)
+        'insert into dadosPessoais (nome, cpf, escolaridade, email, ra, numero)
         values (?, ?, ?, ?, ?, ?)';
         $nome = filter_input(INPUT_POST, 'nome');
         $cpf = filter_input(INPUT_POST, 'cpf');
@@ -51,7 +51,7 @@ class ControleDados {
 
     public function editar() {
         $sql = 
-        'update dadospessoais set nome = ?, cpf = ?, escolaridade = ?, email = ?, ra = ?, numero = ?
+        'update dadosPessoais set nome = ?, cpf = ?, escolaridade = ?, email = ?, ra = ?, numero = ?
         where id = ?;';
         $id = filter_input(INPUT_POST, 'id');
         $nome = filter_input(INPUT_POST, 'nome');
@@ -76,7 +76,7 @@ class ControleDados {
     }
 
     public function excluir() {
-        $sql = 'delete from dadospessoais where id = ?';
+        $sql = 'delete from dadosPessoais where id = ?';
         $id = filter_input(INPUT_POST, 'id');
         $preparado = Conexao::preparaComando($sql);
         $preparado->bindValue(1, $id);
